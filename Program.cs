@@ -52,26 +52,22 @@ namespace DiceGame
                         Console.WriteLine("You: " + playerwins + " Computer: " + aiwins);
                         Console.WriteLine("------------------------");
                     }
-                if (playerwins == 3)
-                {
-                    Console.WriteLine("Congratulation! You won the game!");
+
                 }
-                else if(aiwins == 3)
-                {
-                    Console.WriteLine("Better luck next time.");
-                }                                                          
-                }
-                Console.WriteLine("Press Y to restart the game.");
-                if (Console.ReadKey (true).Key != ConsoleKey.Y)
-                {
-                    break;
-                }
+            if (playerwins == 3)
+            {
+                Console.WriteLine("Congratulation! You won the game!");
             }
-
-
-
-
+            else if (aiwins == 3)
+            {
+                Console.WriteLine("Better luck next time.");
+            }
+            Console.WriteLine("Press Y to restart the game.");
+            if (Console.ReadKey (true).Key != ConsoleKey.Y)
+            {
+                break;
+            }
+            }
         }
-
     }
 }
