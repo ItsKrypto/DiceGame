@@ -26,8 +26,8 @@ namespace DiceGame
                 {
                     Console.WriteLine("Press R to roll the dice!");
                     Console.WriteLine("------------------------");
-                    int playerroll = (rnd1.Next(7));
-                    int airoll = rnd2.Next(7);
+                    int playerroll = (rnd1.Next(1,7));
+                    int airoll = rnd2.Next(1,7);
 
                     if (Console.ReadKey(true).Key == ConsoleKey.R)
                     {
